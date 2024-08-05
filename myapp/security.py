@@ -38,8 +38,6 @@ from flask_appbuilder.const import (
 )
 
 
-
-
 # user list page template
 class MyappSecurityListWidget(ListWidget):
     """

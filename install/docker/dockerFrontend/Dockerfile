@@ -2,7 +2,7 @@
 
 FROM nginx
 
-MAINTAINER star-frontend
+LABEL maintainer="star-frontend"
 
 # 环境变量
 ENV TZ=Asia/Shanghai \
