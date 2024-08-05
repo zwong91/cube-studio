@@ -16,8 +16,8 @@ def init_db():
                 # 创建连接
                 conn = pymysql.connect(host=uri.host, port=uri.port, user=uri.username, password=uri.password, charset='utf8')
                 break
-            except:
-                print('链接数据库失败，5s后重连', flush=True)
+            except Exception as e:
+                print(f'链接数据库失败: host={uri.host}, port={uri.port}, user={uri.username}, password={uri.password}, 错误: {e}', flush=True)
                 time.sleep(5)
         # 创建游标
         cursor = conn.cursor()
