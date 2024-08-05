@@ -921,7 +921,10 @@ CLUSTERS={
     "dev":{
         "NAME":"dev",
         "KUBECONFIG":'/home/myapp/kubeconfig/dev-kubeconfig',
-        # "SERVICE_DOMAIN": 'service.local.com',
+        # "SERVICE_DOMAIN": 'service.svc.cludeter.local',
+        # 本地开发设置集群istio-ingressgateway 入口
+        "HOST": 'http://108.136.246.72:80',
+        
     }
 }
 
