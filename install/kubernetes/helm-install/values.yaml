@@ -19,5 +19,5 @@ dockerRegistry:
 
 host: "*"
 image:
-  frontend: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard-frontend:2024.03.01
-  backend: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard:2024.03.01
+  frontend: ruster2023/kubeflow-dashboard-frontend:2024.08.05
+  backend: ruster2023/kubeflow-dashboard:2024.08.05

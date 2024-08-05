@@ -41,19 +41,19 @@ mysql> flush privileges;
 
 ```
 构建基础镜像（包含基础环境）
-docker build -t ruster2024/kubeflow-dashboard:base-python3.9 -f install/docker/Dockerfile-base .
+docker build -t ruster2023/kubeflow-dashboard:base-python3.9 -f install/docker/Dockerfile-base .
 
 使用基础镜像构建生产镜像
-docker build -t ruster2024/kubeflow-dashboard:2024.08.02 -f install/docker/Dockerfile .
+docker build -t ruster2023/kubeflow-dashboard:2024.08.05 -f install/docker/Dockerfile .
 
 构建frontend镜像
-docker build -t ruster2024/kubeflow-dashboard-frontend:2024.08.02 -f install/docker/dockerFrontend/Dockerfile .
+docker build -t ruster2023/kubeflow-dashboard-frontend:2024.08.05 -f install/docker/dockerFrontend/Dockerfile .
 ```
 
 ## 镜像拉取(如果你不参与开发可以直接使用线上镜像)
 ```
-docker pull ruster2024/kubeflow-dashboard:2024.07.01
-docker pull ruster2024/kubeflow-dashboard-frontend:2024.07.01
+docker pull ruster2023/kubeflow-dashboard:2024.08.05
+docker pull ruster2023/kubeflow-dashboard-frontend:2024.08.05
 ```
 
 ## deploy myapp (docker-compose)

@@ -34,12 +34,12 @@ resources:
   - ../base
 
 images:
-- name: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard
-  newName: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard
-  newTag: 2024.07.01
-- name: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard-frontend
-  newName: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard-frontend
-  newTag: 2024.07.01
+- name: ruster2023/kubeflow-dashboard
+  newName: ruster2023/kubeflow-dashboard
+  newTag: 2024.08.05
+- name: ruster2023/kubeflow-dashboard-frontend
+  newName: ruster2023/kubeflow-dashboard-frontend
+  newTag: 2024.08.05
 
 
 # kustomize build . | kubectl apply -f -
