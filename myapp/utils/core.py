@@ -30,7 +30,7 @@ from flask_babel import gettext as __
 from flask_babel import lazy_gettext as _
 from flask_caching import Cache
 import markdown as md
-import numpy
+import numpy as np
 import pandas as pd
 import parsedatetime
 from jinja2 import Environment, BaseLoader, DebugUndefined
@@ -56,6 +56,9 @@ ADHOC_METRIC_EXPRESSION_TYPES = {"SIMPLE": "SIMPLE", "SQL": "SQL"}
 JS_MAX_INTEGER = 9007199254740991  # Largest int Java Script can handle 2^53-1
 
 sources = {"chart": 0, "dashboard": 1, "sql_lab": 2}
+
+print("pandas version:", pd.__version__)
+print("numpy version:", np.__version__)
 
 try:
     # Having might not have been imported.
@@ -301,9 +304,9 @@ def datetime_f(dttm):
 def base_json_conv(obj):
     if isinstance(obj, memoryview):
         obj = obj.tobytes()
-    if isinstance(obj, numpy.int64):
+    if isinstance(obj, np.int64):
         return int(obj)
-    elif isinstance(obj, numpy.bool_):
+    elif isinstance(obj, np.bool_):
         return bool(obj)
     elif isinstance(obj, set):
         return list(obj)

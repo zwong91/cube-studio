@@ -1,6 +1,6 @@
 FROM ccr.ccs.tencentyun.com/cube-studio/notebook:jupyter-ubuntu22.04
 
-MAINTAINER hamawhite
+LABEL maintainer="hamawhite"
 ARG SPARK_HADOOP_VERSION=3.2
 ARG SPARK_VERSION=3.1.3
 ARG FLINK_VERSION=1.15.1
