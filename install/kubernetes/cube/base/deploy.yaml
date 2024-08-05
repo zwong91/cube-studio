@@ -48,8 +48,8 @@ spec:
 
       serviceAccountName: kubeflow-dashboard
 
-      imagePullSecrets:
-        - name: hubsecret
+      # imagePullSecrets:
+      #   - name: hubsecret
       containers:
         - name: kubeflow-dashboard
           image: ruster2023/kubeflow-dashboard

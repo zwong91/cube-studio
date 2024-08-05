@@ -39,8 +39,8 @@ spec:
               - key: config.py
                 path: config.py
       serviceAccountName: kubeflow-dashboard
-      imagePullSecrets:
-        - name: hubsecret
+      # imagePullSecrets:
+      #   - name: hubsecret
       containers:
         - name: kubeflow-dashboard-schedule
           image: ruster2023/kubeflow-dashboard

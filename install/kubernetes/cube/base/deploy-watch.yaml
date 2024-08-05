@@ -45,8 +45,8 @@ spec:
             name: kubernetes-config
 
       serviceAccountName: kubeflow-dashboard
-      imagePullSecrets:
-        - name: hubsecret
+      # imagePullSecrets:
+      #   - name: hubsecret
       containers:
         - name: kubeflow-watch-workflow
           image: ruster2023/kubeflow-dashboard
